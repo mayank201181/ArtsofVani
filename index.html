@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arts of Vani</title>
+    <meta
+      name="description"
+      content="A growing family archive of art, writing, and creations by Vani."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;500;650;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Arts of Vani home">
+        <span class="brand-mark">V</span>
+        <span>Arts of Vani</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#hanuman-chalisa">Hanuman Chalisa</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-media">
+          <img
+            src="assets/artwork/brown-character.jpg"
+            alt="A brown character drawing by Vani"
+          >
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">A growing creative archive</p>
+          <h1 id="page-title">Arts of Vani</h1>
+          <p>
+            A home for Vani's drawings, verses, school projects, stories, and
+            every little thing worth saving as she grows.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#hanuman-chalisa">Open flip book</a>
+            <a class="button secondary" href="#gallery">View gallery</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-band" id="about">
+        <p>
+          This space is designed as a living keepsake. New work can be added
+          over time with a title, date, image, and a small memory around it.
+        </p>
+      </section>
+
+      <section
+        class="flipbook-section"
+        id="hanuman-chalisa"
+        aria-labelledby="flipbook-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">Bal Vihar memory</p>
+          <h2 id="flipbook-title">Hanuman Chalisa Flip Book</h2>
+          <p>
+            A dedicated section for the Hanuman Chalisa verses Vani made when
+            she was around 6-7 years old.
+          </p>
+        </div>
+
+        <div class="flipbook-shell">
+          <button
+            class="page-button"
+            id="previousPage"
+            type="button"
+            aria-label="Previous page"
+          >
+            <span aria-hidden="true">&#8249;</span>
+          </button>
+          <article class="book" id="book" aria-live="polite"></article>
+          <button
+            class="page-button"
+            id="nextPage"
+            type="button"
+            aria-label="Next page"
+          >
+            <span aria-hidden="true">&#8250;</span>
+          </button>
+        </div>
+
+        <div class="book-status">
+          <p id="bookCounter"></p>
+          <div class="page-dots" id="pageDots" aria-label="Flip book pages"></div>
+        </div>
+      </section>
+
+      <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <p class="eyebrow">Creative collection</p>
+          <h2 id="gallery-title">Artwork Gallery</h2>
+          <p>Drawings and creations collected for Vani's archive.</p>
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Made for Vani's creative collection.</p>
+    </footer>
+
+    <dialog class="lightbox" id="artDialog" aria-labelledby="dialogTitle">
+      <button class="icon-button close-button" id="closeDialog" aria-label="Close artwork preview">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <img id="dialogImage" alt="">
+      <div class="dialog-copy">
+        <h2 id="dialogTitle"></h2>
+        <p id="dialogMeta"></p>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
