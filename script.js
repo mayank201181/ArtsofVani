@@ -1,21 +1,9 @@
 const artworks = [
   {
-    title: "Smiling Character",
+    title: "Guitar Painting",
     date: "May 2026",
-    image: "assets/artwork/smiling-character.jpg",
-    alt: "A smiling character drawn in black marker on lined paper"
-  },
-  {
-    title: "Playful Creature",
-    date: "May 2026",
-    image: "assets/artwork/playful-creature.jpg",
-    alt: "A playful creature drawn in black marker on lined paper"
-  },
-  {
-    title: "Brown Character",
-    date: "May 2026",
-    image: "assets/artwork/brown-character.jpg",
-    alt: "A brown rounded character with black hair-like strokes"
+    image: "assets/artwork/guitar-painting.jpg",
+    alt: "A colorful guitar painting on canvas with a blue background"
   },
   {
     title: "Red Eye Drawing",
