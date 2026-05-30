@@ -4,12 +4,6 @@ const artworks = [
     date: "May 2026",
     image: "assets/artwork/guitar-painting.jpg",
     alt: "A colorful guitar painting on canvas with a blue background"
-  },
-  {
-    title: "Red Eye Drawing",
-    date: "May 2026",
-    image: "assets/artwork/red-eye-drawing.jpg",
-    alt: "A red shaded eye drawing with long black lashes"
   }
 ];
 
